@@ -1,3 +1,7 @@
+body{
+    background-color: #dbdbf6;
+    font-family: sans-serif;
+}
 .game{
     display: flex;
     justify-content: center;
@@ -23,12 +27,32 @@
 }
 .gameBoard [aria-label="x"]{
     background-image: url("../TicTacToe/IMG/Player-X.png");
+    background-size: 20vh;
 }
 .gameBoard [aria-label="o"]{
     background-image: url("../TicTacToe/IMG/Player-O.png");
+    background-size: 20vh;
 }
 .restartButton{
     width: 20vh;
     height: 10vh;
+    border-radius: 10vh;
     font-weight: bold;
+    font-size: 2vh;
+    border-style: solid;
+    border-width: 1px;
+    margin-top: 2vh;
+}
+.restartButton:hover{
+    background-color: #8c8cee;
+}
+.restartButton:active{
+    background-color: #5252e8;
+}
+.gameStatus{
+    font-size: 3vh;
+    margin-top: 4vh;
+}
+.header{
+    font-size: 4vh;
 }
