@@ -1,0 +1,34 @@
+.game{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.gameBoard{
+    width: 60vh;
+    height: 60vh;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0;
+}
+.gameBoard button{
+    background-color: white;
+    border-color: black;
+    border-width: 1px;
+    border-style: solid;
+    width: 20vh;
+    height: 20vh;
+    margin: 0;
+    color: transparent;
+}
+.gameBoard [aria-label="x"]{
+    background-image: url("../TicTacToe/IMG/Player-X.png");
+}
+.gameBoard [aria-label="o"]{
+    background-image: url("../TicTacToe/IMG/Player-O.png");
+}
+.restartButton{
+    width: 20vh;
+    height: 10vh;
+    font-weight: bold;
+}
